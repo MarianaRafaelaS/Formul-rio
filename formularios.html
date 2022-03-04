@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title> Formulários em Java Script </title>
+	<style type="text/css">
+		.esconder{
+		  display: none;
+		}
+        body{
+            background-color: white;
+            color: black;
+            font-size: 20px;
+        }
+        legend{
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        button{
+            color: gray;
+            height: 50px;
+            width: 200px;
+            margin-left: 40%;
+            color: black;
+            font-size: 25px;
+        }
+	</style>
+</head>
+<body>
+	 <!-- onsubmit="pegarDados()" -->
+	<form>
+	  <fieldset> 
+	  <legend> Texto </legend>
+	   <p> Campo de nome
+		  <input type="text" id="texto"><p>
+		 <p> Campo de telefone 
+		  <input type="tel" id="fone"></p>
+		<p> Campo de e-mail 
+			<input type="email" id="e-mail"></p>
+		<p> Campo de senha
+		<input type="password" id="senha"></p>
+		</fieldset>
+		<br>
+		<fieldset>
+		<legend> Checkbox </legend>
+		<p>
+			<label for="info"> Informática </label>
+			<input type="checkbox" id="info"> <p>
+			<label for="adm"> Administração </label>
+			<input type="checkbox" id="adm"> <p>
+			<label for="enf"> Enfermagem </label>
+			<input type="checkbox" id="enf">
+		</div>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo do tipo Rádio </legend>
+			<p>
+	        <label for="info2"> Informática </label>
+			<input type="radio" name="seucurso" id="info2">
+			<p>
+			<label for="adm2"> Administração </label>
+			<input type="radio" name="seucurso" id="adm2"> 
+			<p>
+			<label for="enf2"> Enfermagem </label>
+			<input type="radio" name="seucurso" id="enf2">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo Oculto </legend>
+		<input type="hidden" name="oculto" id="oculto" value="10">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo do tipo number </legend> 
+			<input type="number" name="num" id="num">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo de data </legend>
+			<input type="date" name="data" id="data">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo de hora </legend>
+			<input type="time" name="hora" id="hora">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Faixa de valor (range) </legend>
+			<input type="range" id="valor" min="10" max="100">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Campo Select </legend>
+			<label for="PriFaixa"> 1 Faixa: </label>
+			<select name="PriFaixa" id="PriFaixa">
+			<option value="0"> Preto </option>
+			<option value="1"> Marron </option>
+			<option value="2"> Vermelho </option>
+			<option value="3"> Laranja </option>
+			</select>
+		</fieldset>
+		<br> 
+		<p><button type="reset"> Limpar </button></p>
+		<p><button type="button" onclick="pegarDados()"> Botão Comum </button></p>
+		<button type="submit"> Submeter Form </button>	</form>
+	
+	<hr>
+	<div class="esconder"> Resumo </div>
+	
+	<div id="camText"></div>
+	<div id="camTel"></div>
+	<div id="camEmail"></div>
+	<div id="camPassword"></div>
+	<div id="camHidden"></div>
+	<div id="camNumber"></div>
+	<div id="camDate"></div>
+	<div id="camTime"></div>
+	<div id="camRange"></div>
+	<div id="camCheckInfo"></div>
+	<div id="camCheckAdm"></div>
+	<div id="camCheckEnf"></div>
+	<div id="priFaixa"></div>
+
+<!-- <script type="text/javascript">
+	function pegarDados(){
+		alert('ok');
+	}
+</script> -->
+
+<script src="script.js"></script>
+</body>
+</html>
